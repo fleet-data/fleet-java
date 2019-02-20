@@ -20,12 +20,14 @@ public class Mapping {
     private void setConnections() {
         connections.put("postgresql", com.deepchannel.fleet.source.postgresql.Connection.class);
         connections.put("salesforce", com.deepchannel.fleet.source.salesforce.Connection.class);
+        connections.put("bigcommerce", com.deepchannel.fleet.source.bigcommerce.Connection.class);
     }
 
     private void setConfigs() {
 
         sourceTaskConfigs.put("postgresql", com.deepchannel.fleet.source.postgresql.Config.class);
         sourceTaskConfigs.put("salesforce", com.deepchannel.fleet.source.salesforce.Config.class);
+        sourceTaskConfigs.put("bigcommerce", com.deepchannel.fleet.source.bigcommerce.Config.class);
     }
 
 }
