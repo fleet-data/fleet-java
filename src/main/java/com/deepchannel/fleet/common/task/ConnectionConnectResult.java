@@ -11,7 +11,7 @@ public class ConnectionConnectResult {
         this.success = success;
     }
 
-    public ConnectionConnectResult(boolean success, ArrayList<TaskLog> logs) {
+    public ConnectionConnectResult(boolean success, List<TaskLog> logs) {
         this.success = success;
         this.logs = logs;
     }
