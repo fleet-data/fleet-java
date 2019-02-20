@@ -1,13 +1,11 @@
 package com.deepchannel.fleet.source;
 
-import com.deepchannel.fleet.source.postgresql.Task;
-
 import java.util.HashMap;
 
 public class Mapping {
 
     private HashMap<String, Object> connections = new HashMap<String, Object>();
-    private HashMap<String, Object> sorceTaskConfigs = new HashMap<String, Object>();
+    private HashMap<String, Object> sourceTaskConfigs = new HashMap<String, Object>();
 
     public Mapping() {
 
@@ -26,8 +24,8 @@ public class Mapping {
 
     private void setConfigs() {
 
-        sorceTaskConfigs.put("postgresql", com.deepchannel.fleet.source.postgresql.Config.class);
-        sorceTaskConfigs.put("salesforce", com.deepchannel.fleet.source.salesforce.Config.class);
+        sourceTaskConfigs.put("postgresql", com.deepchannel.fleet.source.postgresql.Config.class);
+        sourceTaskConfigs.put("salesforce", com.deepchannel.fleet.source.salesforce.Config.class);
     }
 
 }
