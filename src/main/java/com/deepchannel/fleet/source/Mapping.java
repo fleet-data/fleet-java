@@ -13,7 +13,7 @@ public class Mapping {
         this.setConfigs();
     }
 
-    private Object getSourceConnectionByKey(String key) {
+    public Object getSourceConnectionByKey(String key) {
         return connections.get(key);
     }
 

@@ -28,7 +28,7 @@ public class Connection implements ValidatableConnection {
     public String sshUser;
 
     @Override
-    public ConnectionConnectResult attempConnect() {
+    public ConnectionConnectResult attemptConnect() {
         List<TaskLog> logs = new ArrayList<>();
         logs.add(new TaskLog("INFO", "Connceting to establish connection..."));
         logs.add(new TaskLog("INFO", "Connection etablished..."));
