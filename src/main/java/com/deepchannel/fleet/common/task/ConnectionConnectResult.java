@@ -7,6 +7,9 @@ import java.util.List;
 
 public class ConnectionConnectResult {
 
+    public boolean success;
+    public List<TaskLog> logs = new ArrayList<>();
+
     public ConnectionConnectResult(boolean success) {
         this.success = success;
     }
@@ -15,7 +18,4 @@ public class ConnectionConnectResult {
         this.success = success;
         this.logs = logs;
     }
-
-    boolean success;
-    List<TaskLog> logs = new ArrayList<>();
 }
