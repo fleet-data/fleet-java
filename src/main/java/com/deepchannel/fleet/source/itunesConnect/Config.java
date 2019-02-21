@@ -11,5 +11,5 @@ public class Config {
     public String dimension;
 
     public String filters;
-    
+
 }
