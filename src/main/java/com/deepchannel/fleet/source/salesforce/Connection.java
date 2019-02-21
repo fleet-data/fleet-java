@@ -18,8 +18,8 @@ public class Connection implements ValidatableConnection {
     @Override
     public ConnectionConnectResult attemptConnect() {
         List<TaskLog> logs = new ArrayList<>();
-        logs.add(new TaskLog("INFO", "Connceting to establish connection..."));
-        logs.add(new TaskLog("INFO", "Connection etablished..."));
+        logs.add(new TaskLog("INFO", "Attempting to establish connection to Salesforce..."));
+        logs.add(new TaskLog("INFO", "Connection established"));
 
         return new ConnectionConnectResult(true, logs);
     }
