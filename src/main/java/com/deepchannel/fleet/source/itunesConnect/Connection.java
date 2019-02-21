@@ -16,7 +16,7 @@ public class Connection implements ValidatableConnection {
     @Override
     public ConnectionConnectResult attemptConnect() {
         List<TaskLog> logs = new ArrayList<>();
-        logs.add(new TaskLog("INFO", "Attempting to establish connection to Intercom..."));
+        logs.add(new TaskLog("INFO", "Attempting to establish connection to iTunes Connect..."));
         logs.add(new TaskLog("INFO", "Connection established"));
 
         return new ConnectionConnectResult(true, logs);
