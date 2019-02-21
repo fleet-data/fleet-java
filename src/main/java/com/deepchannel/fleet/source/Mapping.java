@@ -39,10 +39,24 @@ public class Mapping {
 
     private void setConfigs() {
 
-        sourceTaskConfigs.put("postgresql", com.deepchannel.fleet.source.postgresql.Config.class);
-        sourceTaskConfigs.put("salesforce", com.deepchannel.fleet.source.salesforce.Config.class);
-        sourceTaskConfigs.put("bigcommerce", com.deepchannel.fleet.source.bigcommerce.Config.class);
-        sourceTaskConfigs.put("mongodb", com.deepchannel.fleet.source.mongodb.Config.class);
+        connections.put("appsflyer", com.deepchannel.fleet.source.appsflyer.Config.class);
+        connections.put("bigcommerce", com.deepchannel.fleet.source.bigcommerce.Config.class);
+        connections.put("delighted", com.deepchannel.fleet.source.delighted.Config.class);
+        connections.put("intercom", com.deepchannel.fleet.source.intercom.Config.class);
+        connections.put("itunes-connect", com.deepchannel.fleet.source.itunesConnect.Config.class);
+        connections.put("mixpanel", com.deepchannel.fleet.source.mixpanel.Config.class);
+        connections.put("mongodb", com.deepchannel.fleet.source.mongodb.Config.class);
+        connections.put("msa", com.deepchannel.fleet.source.msa.Config.class);
+        connections.put("open-exchange-rates", com.deepchannel.fleet.source.openExchangeRates.Config.class);
+        connections.put("paypal", com.deepchannel.fleet.source.paypal.Config.class);
+        connections.put("postgresql", com.deepchannel.fleet.source.postgresql.Config.class);
+        connections.put("recharge", com.deepchannel.fleet.source.recharge.Config.class);
+        connections.put("sailthru", com.deepchannel.fleet.source.sailthruDataExporter.Config.class);
+        connections.put("salesforce", com.deepchannel.fleet.source.salesforce.Config.class);
+        connections.put("salesforce-marketing-cloud", com.deepchannel.fleet.source.salesforceMarketingCloud.Config.class);
+        connections.put("shopify", com.deepchannel.fleet.source.shopify.Config.class);
+        connections.put("zendesk", com.deepchannel.fleet.source.zendesk.Config.class);
+
     }
 
 }
