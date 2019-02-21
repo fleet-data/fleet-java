@@ -31,7 +31,7 @@ public class Connection implements ValidatableConnection {
     public ConnectionConnectResult attemptConnect() {
         List<TaskLog> logs = new ArrayList<>();
         logs.add(new TaskLog("INFO", "Attempting to establish connection to PostgreSQL..."));
-        logs.add(new TaskLog("INFO", "Connection etablished..."));
+        logs.add(new TaskLog("INFO", "Connection established..."));
 
         return new ConnectionConnectResult(true, logs);
     }
