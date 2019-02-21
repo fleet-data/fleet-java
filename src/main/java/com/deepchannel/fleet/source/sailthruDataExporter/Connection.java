@@ -7,7 +7,7 @@ import com.deepchannel.fleet.common.task.ValidatableConnection;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Connection  implements ValidatableConnection {
+public class Connection implements ValidatableConnection {
 
     public String accountId;
 
