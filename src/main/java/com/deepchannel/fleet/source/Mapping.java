@@ -17,6 +17,8 @@ public class Mapping {
         return connections.get(key);
     }
 
+    public Object getTargetConfigByKeys(String key) { return sourceTaskConfigs.get(key); }
+
     private void setConnections() {
         connections.put("appsflyer", com.deepchannel.fleet.source.appsflyer.Connection.class);
         connections.put("bigcommerce", com.deepchannel.fleet.source.bigcommerce.Connection.class);

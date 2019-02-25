@@ -5,7 +5,7 @@ import java.util.HashMap;
 public class Mapping {
 
     private HashMap<String, Object> connections = new HashMap<String, Object>();
-    private HashMap<String, Object> sourceTaskConfigs = new HashMap<String, Object>();
+    private HashMap<String, Object> targetTaskConfigs = new HashMap<String, Object>();
 
     public Mapping() {
 
@@ -17,14 +17,18 @@ public class Mapping {
         return connections.get(key);
     }
 
+    public Object getTargetConfigByKey(String key) {
+        return targetTaskConfigs.get(key);
+    }
+
     private void setConnections() {
         connections.put("redshift", com.deepchannel.fleet.target.redshift.Connection.class);
         connections.put("snowflake", com.deepchannel.fleet.target.snowflake.Connection.class);
     }
 
     private void setConfigs() {
-        sourceTaskConfigs.put("redshift", com.deepchannel.fleet.target.redshift.Config.class);
-        sourceTaskConfigs.put("snowflake", com.deepchannel.fleet.target.snowflake.Config.class);
+        targetTaskConfigs.put("redshift", com.deepchannel.fleet.target.redshift.Config.class);
+        targetTaskConfigs.put("snowflake", com.deepchannel.fleet.target.snowflake.Config.class);
     }
 
 }
