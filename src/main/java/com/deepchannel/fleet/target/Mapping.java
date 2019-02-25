@@ -4,8 +4,8 @@ import java.util.HashMap;
 
 public class Mapping {
 
-    private HashMap<String, Object> connections = new HashMap<String, Object>();
-    private HashMap<String, Object> targetTaskConfigs = new HashMap<String, Object>();
+    private HashMap<String, Class> connections = new HashMap<>();
+    private HashMap<String, Class> targetTaskConfigs = new HashMap<>();
 
     public Mapping() {
 
@@ -13,11 +13,11 @@ public class Mapping {
         this.setConfigs();
     }
 
-    public Object getTargetConnectionByKey(String key) {
+    public Class getTargetConnectionByKey(String key) {
         return connections.get(key);
     }
 
-    public Object getTargetConfigByKey(String key) {
+    public Class getTargetConfigByKey(String key) {
         return targetTaskConfigs.get(key);
     }
 

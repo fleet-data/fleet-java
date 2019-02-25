@@ -4,8 +4,8 @@ import java.util.HashMap;
 
 public class Mapping {
 
-    private HashMap<String, Object> connections = new HashMap<String, Object>();
-    private HashMap<String, Object> sourceTaskConfigs = new HashMap<String, Object>();
+    private HashMap<String, Class> connections = new HashMap<String, Class>();
+    private HashMap<String, Class> sourceTaskConfigs = new HashMap<String, Class>();
 
     public Mapping() {
 
@@ -13,11 +13,11 @@ public class Mapping {
         this.setConfigs();
     }
 
-    public Object getSourceConnectionByKey(String key) {
+    public Class getSourceConnectionByKey(String key) {
         return connections.get(key);
     }
 
-    public Object getTargetConfigByKeys(String key) { return sourceTaskConfigs.get(key); }
+    public Class getSourceConfigByKey(String key) { return sourceTaskConfigs.get(key); }
 
     private void setConnections() {
         connections.put("appsflyer", com.deepchannel.fleet.source.appsflyer.Connection.class);
