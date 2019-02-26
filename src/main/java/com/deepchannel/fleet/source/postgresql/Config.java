@@ -6,7 +6,7 @@ public class Config {
     
     public String table;
 
-    public String columns;
+    public String[] columns;
 
     public String identityColumn;
 
