@@ -8,7 +8,7 @@ public class Config {
 
     public String mode;
 
-    public String mergeKeys;
+    public String[] mergeKeys;
 
     public String updateColumn;
 
