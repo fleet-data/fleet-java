@@ -39,6 +39,7 @@ public class Mapping {
         connections.put("zendesk", com.deepchannel.fleet.source.zendesk.Connection.class);
         connections.put("sftp", com.deepchannel.fleet.source.sftp.Connection.class);
         connections.put("s3", com.deepchannel.fleet.source.s3.Connection.class);
+        connections.put("file-upload", com.deepchannel.fleet.source.s3.Connection.class);
     }
 
     private void setConfigs() {
@@ -62,6 +63,7 @@ public class Mapping {
         sourceTaskConfigs.put("zendesk", com.deepchannel.fleet.source.zendesk.Config.class);
         sourceTaskConfigs.put("sftp", com.deepchannel.fleet.source.sftp.Config.class);
         sourceTaskConfigs.put("s3", com.deepchannel.fleet.source.s3.Config.class);
+        sourceTaskConfigs.put("file-upload", com.deepchannel.fleet.source.fileUpload.Config.class);
 
     }
 
