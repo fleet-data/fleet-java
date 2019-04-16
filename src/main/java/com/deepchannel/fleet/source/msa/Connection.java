@@ -13,8 +13,6 @@ public class Connection implements ValidatableConnection {
 
     public int port;
 
-    public String database;
-
     public String username;
 
     public String password;
