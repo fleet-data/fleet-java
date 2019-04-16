@@ -38,6 +38,7 @@ public class Mapping {
         connections.put("shopify", com.deepchannel.fleet.source.shopify.Connection.class);
         connections.put("zendesk", com.deepchannel.fleet.source.zendesk.Connection.class);
         connections.put("sftp", com.deepchannel.fleet.source.sftp.Connection.class);
+        connections.put("s3", com.deepchannel.fleet.source.s3.Connection.class);
     }
 
     private void setConfigs() {
@@ -60,6 +61,7 @@ public class Mapping {
         sourceTaskConfigs.put("shopify", com.deepchannel.fleet.source.shopify.Config.class);
         sourceTaskConfigs.put("zendesk", com.deepchannel.fleet.source.zendesk.Config.class);
         sourceTaskConfigs.put("sftp", com.deepchannel.fleet.source.sftp.Config.class);
+        sourceTaskConfigs.put("s3", com.deepchannel.fleet.source.s3.Config.class);
 
     }
 
