@@ -8,7 +8,7 @@ public class Config {
 
     public String fileType;
 
-    public String delimter;
+    public String delimiter;
 
     public String compressionType;
 
