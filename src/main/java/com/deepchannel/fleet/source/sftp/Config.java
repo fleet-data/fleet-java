@@ -8,11 +8,15 @@ public class Config {
 
     public String fileType;
 
-    public String delimter;
+    public String delimiter;
 
     public String compressionType;
 
     public String errorHandlingType;
+
+    public String updateType;
+
+    public String mergeKeys;
 
     public boolean useLatestFile;
 

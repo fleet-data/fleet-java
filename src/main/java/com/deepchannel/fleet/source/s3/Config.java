@@ -14,6 +14,10 @@ public class Config {
 
     public String errorHandlingType;
 
+    public String updateType;
+
+    public String mergeKeys;
+
     public boolean useLatestFile;
 
     public int skipHeaderLines;
