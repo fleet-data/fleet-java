@@ -27,6 +27,14 @@ public class Connection implements ValidatableConnection {
 
     public String sshUser;
 
+    public String awsBucketName;
+
+    public String awsRegionName;
+
+    public String awsAccessKeyId;
+
+    public String awsSecretAccessKey;
+
     @Override
     public ConnectionConnectResult attemptConnect() {
         List<TaskLog> logs = new ArrayList<>();
