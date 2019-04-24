@@ -9,7 +9,7 @@ import java.util.List;
 
 public class Connection implements ValidatableConnection {
 
-    public String bucketName;
+    public String awsBucketName;
 
     public String awsRegionName;
 
