@@ -2,17 +2,25 @@ package com.deepchannel.fleet.source.fileUpload;
 
 public class Config {
 
-    public String fileLocation;
+    public String folderPath;
+
+    public String fileNamePattern;
 
     public String fileType;
 
-    public String delimter;
+    public String delimiter;
+
+    public String compressionType;
 
     public String errorHandlingType;
+
+    public String updateType;
+
+    public String mergeKeys;
+
+    public boolean useLatestFile;
 
     public int skipHeaderLines;
 
     public int skipFooterLines;
-
-    public Object schema;
 }
