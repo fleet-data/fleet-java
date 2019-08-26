@@ -33,6 +33,6 @@ public class Connection implements ValidatableConnection {
         logs.add(new TaskLog("INFO", "Attempting to establish connection to Snowflake..."));
         logs.add(new TaskLog("INFO", "Connection failed: invalid credentials"));
 
-        return new ConnectionConnectResult(false, logs);
+        return new ConnectionConnectResult(true, logs);
     }
 }
