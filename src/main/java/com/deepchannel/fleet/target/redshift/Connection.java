@@ -27,7 +27,7 @@ public class Connection implements ValidatableConnection {
 
     public String sshUser;
 
-    public String awsBucketName;
+    public String awsS3BucketName;
 
     public String awsRegionName;
 
