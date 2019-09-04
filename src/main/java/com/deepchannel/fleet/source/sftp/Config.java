@@ -20,4 +20,11 @@ public class Config {
 
     public int skipFooterLines;
 
+    public String fileNameTimestampRegex;
+
+    public String fileNameTimestampFormat;
+
+    public String fileNameTimestampColumnName;
+
+    public String maxTimestampValueField;
 }

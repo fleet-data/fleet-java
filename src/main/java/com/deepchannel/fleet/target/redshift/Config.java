@@ -12,4 +12,5 @@ public class Config {
 
     public String updateColumn;
 
+    public String rangeReplaceColumn;
 }
