@@ -14,7 +14,7 @@ public class Config {
 
     public String errorHandlingType;
 
-    public boolean useLatestFile;
+    public boolean useLatest;
 
     public int skipHeaderLines;
 
