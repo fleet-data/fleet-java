@@ -28,4 +28,5 @@ public class Config {
 
     public String maxTimestampValueField;
 
+    public String subFileNameRegex;
 }
