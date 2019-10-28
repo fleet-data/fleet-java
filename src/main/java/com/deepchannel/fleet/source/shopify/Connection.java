@@ -11,6 +11,8 @@ public class Connection implements ValidatableConnection {
 
     public String accessToken;
 
+    public String shopName;
+
     @Override
     public ConnectionConnectResult attemptConnect() {
         List<TaskLog> logs = new ArrayList<>();
