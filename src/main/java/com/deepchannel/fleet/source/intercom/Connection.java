@@ -9,7 +9,7 @@ import java.util.List;
 
 public class Connection implements ValidatableConnection {
 
-    public String appId;
+    public String accessToken;
 
     @Override
     public ConnectionConnectResult attemptConnect() {
