@@ -16,7 +16,7 @@ public class Config {
 
     public boolean useLatest;
 
-    public int skipHeaderLines;
+    public int headerLineNumber;
 
     public int skipFooterLines;
 
@@ -29,4 +29,8 @@ public class Config {
     public String maxTimestampValueField;
 
     public String subFileNameRegex;
+
+    public Integer skipTableLines;
+
+    public Integer sheetNumber;
 }
