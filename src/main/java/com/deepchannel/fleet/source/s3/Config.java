@@ -4,7 +4,7 @@ public class Config {
 
     public String folderPath;
 
-    public String fileNamePattern;
+    public String filePrefix;
 
     public String fileType;
 
