@@ -2,7 +2,7 @@ package com.deepchannel.fleet.source.sftp;
 
 public class Config {
 
-    public String folderPath;
+    public String workingDirectory;
 
     public String fileNamePattern;
 
