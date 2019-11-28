@@ -40,6 +40,7 @@ public class Mapping {
         connections.put("sftp", com.deepchannel.fleet.source.sftp.Connection.class);
         connections.put("s3", com.deepchannel.fleet.source.s3.Connection.class);
         connections.put("file-upload", com.deepchannel.fleet.source.fileUpload.Connection.class);
+        connections.put("email", com.deepchannel.fleet.source.email.Connection.class);
     }
 
     private void setConfigs() {
@@ -64,7 +65,7 @@ public class Mapping {
         sourceTaskConfigs.put("sftp", com.deepchannel.fleet.source.sftp.Config.class);
         sourceTaskConfigs.put("s3", com.deepchannel.fleet.source.s3.Config.class);
         sourceTaskConfigs.put("file-upload", com.deepchannel.fleet.source.fileUpload.Config.class);
-
+        sourceTaskConfigs.put("email", com.deepchannel.fleet.source.email.Config.class);
     }
 
 }
