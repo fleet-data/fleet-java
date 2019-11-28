@@ -4,7 +4,7 @@ public class Config {
 
     public String emailSubject;
 
-    public String filePrefix;
+    public String fileNamePattern;
 
     public String fileType;
 
