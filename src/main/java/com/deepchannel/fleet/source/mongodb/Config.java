@@ -2,7 +2,7 @@ package com.deepchannel.fleet.source.mongodb;
 
 public class Config {
 
-    public String collection;
+    public String projection;
 
     public String identityField;
 
