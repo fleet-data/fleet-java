@@ -11,7 +11,6 @@ public class Connection implements ValidatableConnection {
 
     public String accessToken;
 
-    public String adAccountId;
 
     @Override
     public ConnectionConnectResult attemptConnect() {
