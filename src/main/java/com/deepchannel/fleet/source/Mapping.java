@@ -41,6 +41,7 @@ public class Mapping {
         connections.put("s3", com.deepchannel.fleet.source.s3.Connection.class);
         connections.put("file-upload", com.deepchannel.fleet.source.fileUpload.Connection.class);
         connections.put("email", com.deepchannel.fleet.source.email.Connection.class);
+        connections.put("facebook-ads", com.deepchannel.fleet.source.facebookAds.Connection.class);
     }
 
     private void setConfigs() {
@@ -66,6 +67,7 @@ public class Mapping {
         sourceTaskConfigs.put("s3", com.deepchannel.fleet.source.s3.Config.class);
         sourceTaskConfigs.put("file-upload", com.deepchannel.fleet.source.fileUpload.Config.class);
         sourceTaskConfigs.put("email", com.deepchannel.fleet.source.email.Config.class);
+        sourceTaskConfigs.put("facebook-ads", com.deepchannel.fleet.source.facebookAds.Config.class);
     }
 
 }
