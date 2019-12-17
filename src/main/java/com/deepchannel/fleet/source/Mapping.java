@@ -43,6 +43,7 @@ public class Mapping {
         connections.put("email", com.deepchannel.fleet.source.email.Connection.class);
         connections.put("facebook-ads", com.deepchannel.fleet.source.facebookAds.Connection.class);
         connections.put("google-analytics", com.deepchannel.fleet.source.googleAnalytics.Connection.class);
+        connections.put("adwords", com.deepchannel.fleet.source.googleAdwords.Connection.class);
     }
 
     private void setConfigs() {
@@ -70,6 +71,7 @@ public class Mapping {
         sourceTaskConfigs.put("email", com.deepchannel.fleet.source.email.Config.class);
         sourceTaskConfigs.put("facebook-ads", com.deepchannel.fleet.source.facebookAds.Config.class);
         sourceTaskConfigs.put("google-analytics", com.deepchannel.fleet.source.googleAnalytics.Config.class);
+        sourceTaskConfigs.put("adwords", com.deepchannel.fleet.source.googleAdwords.Config.class);
     }
 
 }

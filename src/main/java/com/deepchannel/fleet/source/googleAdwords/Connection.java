@@ -1,4 +1,4 @@
-package com.deepchannel.fleet.source.googleAnalytics;
+package com.deepchannel.fleet.source.googleAdwords;
 
 import com.deepchannel.fleet.common.logging.TaskLog;
 import com.deepchannel.fleet.common.task.ConnectionConnectResult;
@@ -14,7 +14,7 @@ public class Connection implements ValidatableConnection {
     @Override
     public ConnectionConnectResult attemptConnect() {
         List<TaskLog> logs = new ArrayList<>();
-        logs.add(new TaskLog("INFO", "Attempting to establish connection to Google Analytics..."));
+        logs.add(new TaskLog("INFO", "Attempting to establish connection to Google Adwords..."));
         logs.add(new TaskLog("INFO", "Connection established"));
 
         return new ConnectionConnectResult(true, logs);
