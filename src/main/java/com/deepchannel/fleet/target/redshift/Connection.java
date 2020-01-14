@@ -19,13 +19,7 @@ public class Connection implements ValidatableConnection {
 
     public String password;
 
-    public boolean useSsh;
-
-    public String sshHost;
-
-    public int sshPort;
-
-    public String sshUser;
+    public SshConfig ssh;
 
     public String awsS3BucketName;
 
