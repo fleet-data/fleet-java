@@ -1,4 +1,4 @@
-package com.deepchannel.fleet.target.redshift;
+package com.deepchannel.fleet.common;
 
 public class SshConfig {
 

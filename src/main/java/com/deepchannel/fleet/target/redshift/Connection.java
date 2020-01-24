@@ -1,5 +1,6 @@
 package com.deepchannel.fleet.target.redshift;
 
+import com.deepchannel.fleet.common.SshConfig;
 import com.deepchannel.fleet.common.logging.TaskLog;
 import com.deepchannel.fleet.common.task.ConnectionConnectResult;
 import com.deepchannel.fleet.common.task.ValidatableConnection;

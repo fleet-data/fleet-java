@@ -3,6 +3,7 @@ package com.deepchannel.fleet.source.postgresql;
 import com.deepchannel.fleet.common.logging.TaskLog;
 import com.deepchannel.fleet.common.task.ConnectionConnectResult;
 import com.deepchannel.fleet.common.task.ValidatableConnection;
+import com.deepchannel.fleet.common.SshConfig;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -19,13 +20,7 @@ public class Connection implements ValidatableConnection {
 
     public String password;
 
-    public boolean useSsh;
-
-    public String sshHost;
-
-    public int sshPort;
-
-    public String sshUser;
+    public SshConfig ssh;
 
     @Override
     public ConnectionConnectResult attemptConnect() {
