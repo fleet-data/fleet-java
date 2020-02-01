@@ -9,7 +9,9 @@ import java.util.List;
 
 public class Connection implements ValidatableConnection {
 
-    public String url;
+    public String host;
+
+    public int port;
 
     public String database;
 
