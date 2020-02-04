@@ -21,14 +21,6 @@ public class Connection implements ValidatableConnection {
 
     public String password;
 
-    public String awsS3BucketName;
-
-    public String awsRegionName;
-
-    public String awsAccessKeyId;
-
-    public String awsSecretAccessKey;
-
     @Override
     public ConnectionConnectResult attemptConnect() {
         List<TaskLog> logs = new ArrayList<>();
