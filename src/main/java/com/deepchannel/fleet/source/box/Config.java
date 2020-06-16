@@ -1,10 +1,10 @@
-package com.deepchannel.fleet.source.email;
+package com.deepchannel.fleet.source.box;
 
 public class Config {
 
-    public String emailSubject;
+    public String folderID;
 
-    public String fileNamePattern;
+    public String filePrefix;
 
     public String fileType;
 
@@ -14,15 +14,11 @@ public class Config {
 
     public String errorHandlingType;
 
-    public String updateType;
+    public boolean useLatest;
 
-    public String mergeKeys;
+    public int headerLineNumber;
 
-    public Boolean useLatest;
-
-    public Integer headerLineNumber;
-
-    public Integer skipFooterLines;
+    public int skipFooterLines;
 
     public String fileNameTimestampRegex;
 
