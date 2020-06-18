@@ -45,6 +45,7 @@ public class Mapping {
         connections.put("google-analytics", com.deepchannel.fleet.source.googleAnalytics.Connection.class);
         connections.put("adwords", com.deepchannel.fleet.source.googleAdwords.Connection.class);
         connections.put("box", com.deepchannel.fleet.source.box.Connection.class);
+        connections.put("google-sheets", com.deepchannel.fleet.source.googleSheets.Connection.class);
     }
 
     private void setConfigs() {
@@ -74,6 +75,7 @@ public class Mapping {
         sourceTaskConfigs.put("google-analytics", com.deepchannel.fleet.source.googleAnalytics.Config.class);
         sourceTaskConfigs.put("adwords", com.deepchannel.fleet.source.googleAdwords.Config.class);
         sourceTaskConfigs.put("box", com.deepchannel.fleet.source.box.Config.class);
+        sourceTaskConfigs.put("google-sheets", com.deepchannel.fleet.source.googleSheets.Config.class);
     }
 
 }
